@@ -8,8 +8,8 @@ function play(){
     playGroundSection.classList.remove('hidden');
 
     const letter = getARandomAlphabet();
-     const saidBhai = document.getElementById('display_letter');
-     saidBhai.innerText = letter ;
+    const saidBhai = document.getElementById('display_letter');
+    saidBhai.innerText = letter ;
     //console.log(showLetter)
-
+    setBackgroundColorById(letter);
 }
