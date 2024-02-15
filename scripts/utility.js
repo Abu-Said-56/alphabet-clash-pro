@@ -16,3 +16,17 @@ function setBackgroundColorById(elementId){
     const element = document.getElementById(elementId);
     element.classList.add('bg-orange-500');
 }
+
+function removeBackgeoundColorById(elementId){
+    const element = document.getElementById(elementId);
+    element.classList.remove('bg-orange-500');
+}
+
+function continueGame(){
+    const alphabet = getARandomAlphabet();
+
+    const currentAlphabetElement = document.getElementById('display_letter');
+    currentAlphabetElement.innerText = alphabet;
+
+    setBackgroundColorById(alphabet);
+}

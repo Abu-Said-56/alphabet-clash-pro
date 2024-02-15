@@ -71,13 +71,15 @@
                 <!-- keyboard end -->
                 <!-- life score -->
                 <div class="flex justify-between w-[75%]">
+                    <!-- display life -->
                     <button class="btn btn-info rounded-full text-white">Life
                         <img src="images/dolour.svg" alt="">
-                        1
+                        <span id="life_point">5</span>
                       </button>
+                      <!-- display score -->
                       <button class="btn btn-info rounded-full text-white">Score
                         <img src="images/hurt.svg" alt="">
-                        <span></span>
+                        <span id="score_num">1</span>
                       </button>
                 </div>
             </div>
@@ -85,7 +87,7 @@
         </section>
         <!-- playGround end -->
         <!-- final score start -->
-        <section class="score min-h-screen flex justify-center items-center hidden">
+        <section id="Score-Section" class="score min-h-screen flex justify-center items-center hidden">
             <div class="text-white text-center space-y-6  bg-[#FFFFFF33] p-4 rounded-lg">
                 <h1 class="text-8xl">
                     <span class="font-semibold">Score:</span>
